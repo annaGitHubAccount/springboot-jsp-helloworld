@@ -11,6 +11,7 @@
 <html>
 <head>
     <title>Submitted Person Information</title>
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
 
@@ -27,9 +28,22 @@
 </table>
 
 <ul>
+
     <c:forEach items="${exMaedels}" var="maedel">
-        <li>${maedel}</li>
+
+        <c:choose>
+
+            <c:when test="${maedel == 'Anna'}">
+                <li class="roterName">${maedel}</li>
+            </c:when>
+            <c:otherwise>
+                <li>${maedel}</li>
+            </c:otherwise>
+
+        </c:choose>
+
     </c:forEach>
+
 </ul>
 
 </body>
