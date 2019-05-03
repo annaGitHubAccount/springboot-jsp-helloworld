@@ -1,9 +1,10 @@
 package com.hellokoding.springboot.view.model;
 
-public class Person {
+public class PersonForm {
 
     private String name;
     private String nachname;
+    private String exMaedels;
 
     public String getName() {
         return name;
@@ -19,5 +20,13 @@ public class Person {
 
     public void setNachname(String nachname) {
         this.nachname = nachname;
+    }
+
+    public String getExMaedels() {
+        return exMaedels;
+    }
+
+    public void setExMaedels(String exMaedels) {
+        this.exMaedels = exMaedels;
     }
 }

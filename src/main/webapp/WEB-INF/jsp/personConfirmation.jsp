@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html>
 <head>
     <title>Submitted Person Information</title>
@@ -16,13 +18,19 @@
 <table>
     <tr>
         <td>Name :</td>
-        <td>${person.name}</td>
+        <td>${name}</td>
     </tr>
     <tr>
         <td>Nachname :</td>
-        <td>${person.nachname}</td>
+        <td>${nachname}</td>
     </tr>
 </table>
+
+<ul>
+    <c:forEach items="${exMaedels}" var="maedel">
+        <li>${maedel}</li>
+    </c:forEach>
+</ul>
 
 </body>
 </html>

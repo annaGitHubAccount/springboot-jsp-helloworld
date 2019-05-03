@@ -8,6 +8,6 @@
 <body>
     <h2 class="hello-title">Hello ${name}!</h2>
     <script src="/js/main.js"></script>
-    <a href="http://localhost:8080/personForm">Go to person form</a>
+    <a href="http://localhost:8080/personForm">Go to personForm form</a>
 </body>
 </html>
