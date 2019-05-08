@@ -5,3 +5,10 @@ create table if not exists Person(
   exMaedels varchar(200) not null
 );
 
+
+create table if not exists Wagen(
+
+    id long primary key auto_increment not null,
+    marke varchar(50) not null,
+    jahrgang number(4) not null
+);

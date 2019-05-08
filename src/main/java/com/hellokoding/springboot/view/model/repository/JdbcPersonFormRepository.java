@@ -1,5 +1,6 @@
-package com.hellokoding.springboot.view.model;
+package com.hellokoding.springboot.view.model.repository;
 
+import com.hellokoding.springboot.view.model.PersonDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

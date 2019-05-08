@@ -4,7 +4,7 @@ package com.hellokoding.springboot.view.controller;
 import com.hellokoding.springboot.view.model.PersonAssembler;
 import com.hellokoding.springboot.view.model.PersonDTO;
 import com.hellokoding.springboot.view.model.PersonForm;
-import com.hellokoding.springboot.view.model.PersonFormRepository;
+import com.hellokoding.springboot.view.model.repository.PersonFormRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
