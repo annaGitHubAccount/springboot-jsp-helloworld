@@ -1,7 +1,11 @@
 package com.hellokoding.springboot.view.controller;
 
 
+import com.hellokoding.springboot.view.model.PersonAssembler;
+import com.hellokoding.springboot.view.model.PersonDTO;
 import com.hellokoding.springboot.view.model.PersonForm;
+import com.hellokoding.springboot.view.model.PersonFormRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +21,12 @@ import java.util.List;
 @Controller
 @RequestMapping("/personForm")
 public class PersonFormController {
+
+    @Autowired
+    private PersonFormRepository personFormRepository;
+
+    PersonAssembler personAssembler = new PersonAssembler();
+
 
     @GetMapping
     public String helloGoToPersonForm(Model model) {
@@ -41,6 +51,10 @@ public class PersonFormController {
             List<String> exMaedelsList = Arrays.asList(exMaedelsArray);
             model.addAttribute("exMaedels", exMaedelsList);
         }
+
+        PersonDTO personDTO = personAssembler.mapPersonFormNachDTO(personForm);
+        personFormRepository.saveDataToDatabase(personDTO);
+
         return "personConfirmation";
     }
 
