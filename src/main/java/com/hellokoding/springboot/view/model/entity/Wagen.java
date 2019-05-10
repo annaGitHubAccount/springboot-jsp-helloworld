@@ -1,10 +1,7 @@
 package com.hellokoding.springboot.view.model.entity;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Wagen {
@@ -16,6 +13,10 @@ public class Wagen {
     private String marke;
 
     private Integer jahrgang;
+
+    @ManyToOne
+    private Kunde kunde;
+
 
 
     public Wagen(String marke, Integer jahrgang) {
@@ -49,5 +50,13 @@ public class Wagen {
 
     public void setJahrgang(Integer jahrgang) {
         this.jahrgang = jahrgang;
+    }
+
+    public Kunde getKunde() {
+        return kunde;
+    }
+
+    public void setKunde(Kunde kunde) {
+        this.kunde = kunde;
     }
 }
