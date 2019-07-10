@@ -1,10 +1,10 @@
-package com.hellokoding.springboot.view.controller;
+package com.hellokoding.springboot.app.controller;
 
 
-import com.hellokoding.springboot.view.model.PersonAssembler;
-import com.hellokoding.springboot.view.model.PersonDTO;
-import com.hellokoding.springboot.view.model.PersonForm;
-import com.hellokoding.springboot.view.model.repository.PersonFormRepository;
+import com.hellokoding.springboot.app.model.PersonAssembler;
+import com.hellokoding.springboot.app.model.dto.PersonDTO;
+import com.hellokoding.springboot.app.model.PersonForm;
+import com.hellokoding.springboot.app.repository.PersonFormRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,6 +40,7 @@ public class PersonFormController {
     @PostMapping
     public String personFormDatenAblesen(Model model, @ModelAttribute("personForm") PersonForm personForm) {
 
+        // model dziala na zasadzie mapy: spod klucza "name" z formularza "personForm.jsp" odczytuje jego wartosc
         model.addAttribute("name", personForm.getName());
         model.addAttribute("nachname", personForm.getNachname());
 

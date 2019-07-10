@@ -1,4 +1,6 @@
-package com.hellokoding.springboot.view.model;
+package com.hellokoding.springboot.app.model;
+
+import com.hellokoding.springboot.app.model.dto.PersonDTO;
 
 public class PersonAssembler {
 

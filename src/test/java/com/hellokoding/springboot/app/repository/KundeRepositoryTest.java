@@ -1,9 +1,9 @@
-package com.hellokoding.springboot.view.model.repository;
+package com.hellokoding.springboot.app.repository;
 
 
-import com.hellokoding.springboot.view.model.entity.Kunde;
-import com.hellokoding.springboot.view.model.entity.Wagen;
-import com.hellokoding.springboot.view.model.service.KundeService;
+import com.hellokoding.springboot.app.model.entity.Kunde;
+import com.hellokoding.springboot.app.model.entity.Wagen;
+import com.hellokoding.springboot.app.service.KundeService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

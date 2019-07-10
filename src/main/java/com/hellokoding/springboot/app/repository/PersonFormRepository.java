@@ -1,6 +1,6 @@
-package com.hellokoding.springboot.view.model.repository;
+package com.hellokoding.springboot.app.repository;
 
-import com.hellokoding.springboot.view.model.PersonDTO;
+import com.hellokoding.springboot.app.model.dto.PersonDTO;
 
 import java.util.List;
 

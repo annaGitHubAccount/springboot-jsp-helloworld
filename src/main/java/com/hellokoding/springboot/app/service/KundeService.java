@@ -1,6 +1,6 @@
-package com.hellokoding.springboot.view.model.service;
+package com.hellokoding.springboot.app.service;
 
-import com.hellokoding.springboot.view.model.entity.Kunde;
+import com.hellokoding.springboot.app.model.entity.Kunde;
 
 
 public interface KundeService {

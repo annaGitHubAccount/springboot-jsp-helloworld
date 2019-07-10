@@ -1,11 +1,11 @@
-package com.hellokoding.springboot.view.model.service;
+package com.hellokoding.springboot.app.service;
 
-import com.hellokoding.springboot.view.model.entity.Kunde;
-import com.hellokoding.springboot.view.model.repository.KundeRepository;
+import com.hellokoding.springboot.app.model.entity.Kunde;
+import com.hellokoding.springboot.app.repository.KundeRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-// warstwa tranzakcji. W 1 tranzakcji moge uzywac wiele Repositories.
+// warstwa tranzakcji. W jednej tranzakcji moge uzywac wiele Repositories.
 // Service musi miec swoje metody, ktore moga sie nazywac tak jak w Repositorium.
 // Tranzakcja przebiega w metodzie, zaznaczam ja jako: @Transactional
 
@@ -15,7 +15,7 @@ public class KundeServiceImpl implements KundeService{
     private final KundeRepository kundeRepository;
 
     // wstrzykuje poprzez Kostruktor. Moglabym tez przez @Autowired.
-    public KundeServiceImpl(KundeRepository kundeRepository) {
+    public KundeServiceImpl(KundeRepository kundeRepository){
         this.kundeRepository = kundeRepository;
     }
 

@@ -1,4 +1,4 @@
-package com.hellokoding.springboot.view.model;
+package com.hellokoding.springboot.app.model.dto;
 
 public class PersonDTO {
 

@@ -1,4 +1,4 @@
-package com.hellokoding.springboot.view.model.entity;
+package com.hellokoding.springboot.app.model.entity;
 
 import javax.persistence.*;
 import java.util.List;

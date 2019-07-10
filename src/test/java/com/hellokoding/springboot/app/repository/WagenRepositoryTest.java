@@ -1,6 +1,6 @@
-package com.hellokoding.springboot.view.model.repository;
+package com.hellokoding.springboot.app.repository;
 
-import com.hellokoding.springboot.view.model.entity.Wagen;
+import com.hellokoding.springboot.app.model.entity.Wagen;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
